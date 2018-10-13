@@ -3,9 +3,9 @@ class Application
     resp = Rack::Response.new
      t = Time.now
 
-     if t <= 12
+     if t <= "12"
        resp.write "Good Morning!"
-     elsif t > 13 && t >= 24
+     elsif t > "13" && t >= "24"
        resp.write "Good Afternoon!"
      end
 
