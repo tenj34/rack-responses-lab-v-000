@@ -3,6 +3,8 @@ class Application
     resp = Rack::Response.new
      env[:timestamp] = Time.now
 
+     resp.write "#{env}"
+
 
     resp.finish
 end
