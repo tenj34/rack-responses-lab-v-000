@@ -5,6 +5,9 @@ class Application
 
      if t <= 12
        resp.write "Good Morning!"
+     elsif t > 13 && t >= 24
+       resp.write "Good Afternoon!"
+
      resp.write "#{t.hour}"
 
 
