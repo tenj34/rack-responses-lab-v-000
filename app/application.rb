@@ -1,9 +1,9 @@
 class Application
   def call(env)
     resp = Rack::Response.new
-     env[:timestamp] = Time.now
+     time = Time.now
 
-     resp.write "#{env}"
+     resp.write "#{time}"
 
 
     resp.finish
