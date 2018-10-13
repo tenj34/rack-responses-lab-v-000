@@ -7,6 +7,7 @@ class Application
        resp.write "Good Morning!"
      elsif t > 13 && t >= 24
        resp.write "Good Afternoon!"
+     end
 
     resp.finish
   end
