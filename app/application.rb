@@ -8,9 +8,6 @@ class Application
      elsif t > 13 && t >= 24
        resp.write "Good Afternoon!"
 
-     resp.write "#{t.hour}"
-
-
     resp.finish
   end
 end
